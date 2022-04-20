@@ -1,0 +1,1055 @@
+/*
+* style.css
+* @author Mark Matanza
+* #263e45 transparent blue
+* #4f3420 transparent orange
+* #4f2420 transparent red
+* #262337 transparent purple
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color: #00456B;
+}
+
+/***********************************
+**** Illustrator Default Styles ****
+******* DO NOT REMOVE / EDIT *******
+************************************/
+
+.st0{fill:#F58220;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st1{fill:#2F348D;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st2{fill:#32B1CE;}
+.st3{fill:#F43722;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st4{fill:none;}
+.st5{fill:#808285;}
+.st6{font-family:'Oswald', sans-serif;}
+.st7{font-size:140px;}
+.st8{fill:#32B1CE;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st9{fill:#6D6E71;}
+.st10{fill:#516BA6;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st11{fill:#FFFFFF;}
+.st12{fill:#231F20;}
+.st13{font-size:100px;}
+.st14{fill:none;stroke:#D1D3D4;stroke-width:6;stroke-miterlimit:10;}
+.st15{opacity:0.79; display: none;}
+
+
+h2 {
+  text-transform: uppercase;
+  color: #00456B;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**************************
+****** Map Containers *****
+***************************/
+
+.wrapper {
+  margin: 50px auto;
+  padding: 0;
+  width: 980px;
+  max-width: 100%;
+}
+
+.us-map-mobile {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.us-map-desktop {
+  display: block;
+}
+
+.us-map-desktop .us-map-inner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.us-map-desktop svg path,
+.us-map-desktop svg rect,
+.us-map-desktop svg text,
+.us-map-desktop svg line,
+.us-map-desktop .colored-piece {
+    cursor: pointer;
+}
+
+/**************************
+** Modal Custom Styles ***
+***************************/
+
+#map-modal {
+  font-family: 'Oswald', sans-serif;
+  padding: 0 !important;
+  position: absolute;
+  z-index: 99999 !important;
+}
+
+#map-modal .modal-content {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+#map-modal .modal-header {
+  border-bottom: none;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#map-modal .modal-header .modal-title {
+  padding: 10px 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#map-modal .modal-content .modal-body {
+  font-family: verdana, arial, sans-serif;
+  color: #000000;
+}
+
+#map-modal .modal-content .modal-body p {
+  margin-bottom: 0;
+  font-size: .875em;
+}
+
+#map-modal .modal-dialog.modal-md {
+    max-width: 40% !important;
+}
+
+#map-modal .modal-header .close {
+  margin: 0;
+  padding: 0;
+  font-family: verdana, arial, sans-serif;
+  text-transform: lowercase;
+  text-shadow: none;
+  color: #000000;
+  opacity: 1;
+  font-weight: 300;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+    overflow: scroll;
+}
+
+.modal-backdrop {
+  /* display: none; */
+  background-color: transparent;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/**************************
+** State Specific Styles ***
+******** Color Coded *******
+***************************/
+
+/* Alaska */
+.ak-modal {
+  top: 300px;
+  left: 40px;
+}
+
+.ak-modal .modal-content {
+  background-image: url("../images/desktop/alaska-desktop-bg.jpg") !important;
+}
+
+/* Alabama */
+.al-modal {
+  top: 150px;
+  left: -60px;
+}
+
+.al-modal .modal-content {
+  background-image: url("../images/desktop/alabama-desktop-bg.jpg") !important;
+}
+
+/* Arkansas */
+.ar-modal {
+  top: 118px;
+  left: -170px;
+}
+
+.ar-modal .modal-content {
+  background-image: url("../images/desktop/arkansas-desktop-bg.jpg") !important;
+}
+
+/* Arizona */
+.az-modal {
+  top: 150px;
+  left: -15px;
+}
+
+.az-modal .modal-content {
+  background-image: url("../images/desktop/arizona-desktop-bg.jpg") !important;
+}
+
+/* California */
+.ca-modal {
+  top: 80px;
+  left: -120px;
+}
+
+.ca-modal .modal-content {
+  background-image: url("../images/desktop/california-desktop-bg.jpg") !important;
+}
+
+/* Colorado */
+.co-modal {
+  top: 129px;
+  left: 110px;
+}
+
+.co-modal .modal-content {
+  background-image: url("../images/desktop/colorado-desktop-bg.jpg") !important;
+}
+
+/* Connecticut */
+.ct-modal {
+  top: 200px;
+  left: 170px;
+}
+
+.ct-modal .modal-content {
+  background-image: url("../images/desktop/connecticut-desktop-bg.jpg") !important;
+}
+
+/* Delaware */
+.de-modal {
+  top: 242px;
+  left: 140px;
+}
+
+.de-modal .modal-content {
+  background-image: url("../images/desktop/delaware-desktop-bg.jpg") !important;
+}
+
+/* Florida */
+.fl-modal {
+  top: 200px;
+  left: 50px;
+}
+
+.fl-modal .modal-content {
+  background-image: url("../images/desktop/florida-desktop-bg.jpg") !important;
+}
+
+/* Georgia */
+.ga-modal {
+  top: 150px;
+  left: -15px;
+}
+
+.ga-modal .modal-content {
+  background-image: url("../images/desktop/georgia-desktop-bg.jpg") !important;
+}
+
+/* Hawaii */
+.hi-modal {
+  top: 385px;
+  left: 180px;
+}
+
+.hi-modal .modal-content {
+  background-image: url("../images/desktop/hawaii-desktop-bg.jpg") !important;
+}
+
+/* Iowa */
+.ia-modal {
+  top: 100px;
+  left: -208px;
+}
+
+.ia-modal .modal-content {
+  background-image: url("../images/desktop/iowa-desktop-bg.jpg") !important;
+}
+
+/* Idaho */
+.id-modal {
+  top: 166px;
+  left: -39px;
+}
+
+.id-modal .modal-content {
+  background-image: url("../images/desktop/idaho-desktop-bg.jpg") !important;
+}
+
+/* Illinois */
+.il-modal {
+  top: 188px;
+  left: -120px;
+}
+
+.il-modal .modal-content {
+  background-image: url("../images/desktop/illinois-desktop-bg.jpg") !important;
+}
+
+/* Indiana */
+.in-modal {
+  top: 100px;
+  left: -58px;
+}
+
+.in-modal .modal-content {
+  background-image: url("../images/desktop/indiana-desktop-bg.jpg") !important;
+}
+
+/* Kansas */
+.ks-modal {
+  top: 100px;
+  left: -296px;
+}
+
+.ks-modal .modal-content {
+  background-image: url("../images/desktop/kansas-desktop-bg.jpg") !important;
+}
+
+/* Kentucky */
+.ky-modal {
+  top: 100px;
+  left: -80px;
+}
+
+.ky-modal .modal-content {
+  background-image: url("../images/desktop/kentucky-desktop-bg.jpg") !important;
+}
+
+/* Louisiana */
+.la-modal {
+  top: 198px;
+  left: -145px;
+}
+
+.la-modal .modal-content {
+  background-image: url("../images/desktop/louisiana-desktop-bg.jpg") !important;
+}
+
+/* Massachusetts */
+.ma-modal {
+  top: 180px;
+  left: 170px;
+}
+
+.ma-modal .modal-content {
+  background-image: url("../images/desktop/massachusetts-desktop-bg.jpg") !important;
+}
+
+/* Maryland */
+.md-modal {
+  top: 150px;
+  left: 85px;
+}
+
+.md-modal .modal-content {
+  background-image: url("../images/desktop/maryland-desktop-bg.jpg") !important;
+}
+
+/* Maine */
+.me-modal {
+  top: 165px;
+  left: 232px;
+}
+
+.me-modal .modal-content {
+  background-image: url("../images/desktop/maine-desktop-bg.jpg") !important;
+}
+
+/* Michigan */
+.mi-modal {
+  top: 150px;
+  left: -50px;
+}
+
+.mi-modal .modal-content {
+  background-image: url("../images/desktop/michigan-desktop-bg.jpg") !important;
+}
+
+/* Minnesota */
+.mn-modal {
+  top: 210px;
+  left: -170px;
+}
+
+.mn-modal .modal-content {
+  background-image: url("../images/desktop/minnesota-desktop-bg.jpg") !important;
+}
+
+/* Missouri */
+.mo-modal {
+  top: 150px;
+  left: -188px;
+}
+
+.mo-modal .modal-content {
+  background-image: url("../images/desktop/missouri-desktop-bg.jpg") !important;
+}
+
+/* Mississippi */
+.ms-modal {
+  top: 150px;
+  left: -105px;
+}
+
+.ms-modal .modal-content {
+  background-image: url("../images/desktop/mississippi-desktop-bg.jpg") !important;
+}
+
+/* Montana */
+.mt-modal {
+  top: 160px;
+  left: 70px;
+}
+
+.mt-modal .modal-content {
+  background-image: url("../images/desktop/montana-desktop-bg.jpg") !important;
+}
+
+/* North Carolina */
+.nc-modal {
+  top: 150px;
+  left: 15px;
+}
+
+.nc-modal .modal-content {
+  background-image: url("../images/desktop/north-carolina-desktop-bg.jpg") !important;
+}
+
+/* North Dakota */
+.nd-modal {
+  top: 150px;
+  left: 0px;
+}
+
+.nd-modal .modal-content {
+  background-image: url("../images/desktop/north-dakota-desktop-bg.jpg") !important;
+}
+
+/* Nebraska */
+.ne-modal {
+  top: 215px;
+  left: 212px;
+}
+
+.ne-modal .modal-content {
+  background-image: url("../images/desktop/nebraska-desktop-bg.jpg") !important;
+}
+
+/* New Hampshire */
+.nh-modal {
+  top: 150px;
+  left: 100px;
+}
+
+.nh-modal .modal-content {
+  background-image: url("../images/desktop/new-hampshire-desktop-bg.jpg") !important;
+}
+
+/* New Jersey */
+.nj-modal {
+  top: 230px;
+  left: 140px;
+}
+
+.nj-modal .modal-content {
+  background-image: url("../images/desktop/new-jersey-desktop-bg.jpg") !important;
+}
+
+/* New York */
+.ny-modal {
+  top: 150px;
+  left: 72px;
+}
+
+.ny-modal .modal-content {
+  background-image: url("../images/desktop/new-york-desktop-bg.jpg") !important;
+}
+
+/* New Mexico */
+.nm-modal {
+  top: 100px;
+  left: 100px;
+}
+
+.nm-modal .modal-content {
+  background-image: url("../images/desktop/new-mexico-desktop-bg.jpg") !important;
+}
+
+/* Nevada */
+.nv-modal {
+  top: 148px;
+  left: -90px;
+}
+
+.nv-modal .modal-content {
+  background-image: url("../images/desktop/nevada-desktop-bg.jpg") !important;
+}
+
+/* Ohio */
+.oh-modal {
+  top: 150px;
+  left: -15px;
+}
+
+.oh-modal .modal-content {
+  background-image: url("../images/desktop/ohio-desktop-bg.jpg") !important;
+}
+
+/* Oklahoma */
+.ok-modal {
+  top: 110px;
+  left: -50px;
+}
+
+.ok-modal .modal-content {
+  background-image: url("../images/desktop/oklahoma-desktop-bg.jpg") !important;
+}
+
+/* Oregon */
+.or-modal {
+  top: 128px;
+  left: -122px;
+}
+
+.or-modal .modal-content {
+  background-image: url("../images/desktop/oregon-desktop-bg.jpg") !important;
+}
+
+/* Pennsylvania */
+.pa-modal {
+  top: 200px;
+  left: 50px;
+}
+
+.pa-modal .modal-content {
+  background-image: url("../images/desktop/pennsylvania-desktop-bg.jpg") !important;
+}
+
+/* Rhode Island */
+.ri-modal {
+  top: 205px;
+  left: 230px;
+}
+
+.ri-modal .modal-content {
+  background-image: url("../images/desktop/rhode-island-desktop-bg.jpg") !important;
+}
+
+/* South Carolina */
+.sc-modal {
+  top: 150px;
+  left: 32px;
+}
+
+.sc-modal .modal-content {
+  background-image: url("../images/desktop/south-carolina-desktop-bg.jpg") !important;
+}
+
+/* South Dakota */
+.sd-modal {
+  top: 220px;
+  left: 0px;
+}
+
+.sd-modal .modal-content {
+  background-image: url("../images/desktop/south-dakota-desktop-bg.jpg") !important;
+}
+
+/* Tennessee */
+.tn-modal {
+  top: 150px;
+  left: -100px;
+}
+
+.tn-modal .modal-content {
+  background-image: url("../images/desktop/tennessee-desktop-bg.jpg") !important;
+}
+
+/* Texas */
+.tx-modal {
+  top: 120px;
+  left: 0px;
+}
+
+.tx-modal .modal-content {
+  background-image: url("../images/desktop/texas-desktop-bg.jpg") !important;
+}
+
+/* Utah */
+.ut-modal {
+  top: 120px;
+  left: 0px;
+}
+
+.ut-modal .modal-content {
+  background-image: url("../images/desktop/utah-desktop-bg.jpg") !important;
+}
+
+/* Virginia */
+.va-modal {
+  top: 120px;
+  left: 27px;
+}
+
+.va-modal .modal-content {
+  background-image: url("../images/desktop/virginia-desktop-bg.jpg") !important;
+}
+
+/* Vermont */
+.vt-modal {
+  top: 160px;
+  left: 162px;
+}
+
+.vt-modal .modal-content {
+  background-image: url("../images/desktop/vermont-desktop-bg.jpg") !important;
+}
+
+/* Washington */
+.wa-modal {
+  top: 125px;
+  left: -135px;
+}
+
+.wa-modal .modal-content {
+  background-image: url("../images/desktop/washington-desktop-bg.jpg") !important;
+}
+
+/* Wisconsin */
+.wi-modal {
+  top: 140px;
+  left: -150px;
+}
+
+.wi-modal .modal-content {
+  background-image: url("../images/desktop/wisconsin-desktop-bg.jpg") !important;
+}
+
+/* WV - West Virginia */
+.wv-modal {
+  top: 140px;
+  left: 0px;
+}
+
+.wv-modal .modal-content {
+  background-image: url("../images/desktop/west-virginia-desktop-bg.jpg") !important;
+}
+
+/* WY - Wyoming */
+.wy-modal {
+  top: 185px;
+  left: 75px;
+}
+
+.wy-modal .modal-content {
+  background-image: url("../images/desktop/wyoming-desktop-bg.jpg") !important;
+}
+
+/**************************
+** Legend Specific Styles ***
+***************************/
+
+/* Legal */
+/* #F58220 */
+#map-modal #state-modal-color.legal-state .modal-content {
+  border: 1px solid #F58220;
+}
+
+#map-modal #state-modal-color.legal-state .modal-title {
+  background: #F58220;
+}
+
+/* Almost Legal */
+/* #2F348D */
+#map-modal #state-modal-color.almost-legal-state .modal-content{
+  border: 1px solid #2F348D;
+}
+
+#map-modal #state-modal-color.almost-legal-state .modal-title {
+  background: #2F348D;
+}
+
+/* Pending Legislation */
+/* #32B1CE */
+#map-modal #state-modal-color.pending-state .modal-content {
+  border: 1px solid #32B1CE;
+}
+
+#map-modal #state-modal-color.pending-state .modal-title {
+  background: #32B1CE;
+}
+
+/* Not Legal */
+/* #F43722 */
+#map-modal #state-modal-color.not-legal-state .modal-content {
+  border: 1px solid #F43722;
+}
+
+#map-modal #state-modal-color.not-legal-state .modal-title {
+  background: #F43722;
+}
+
+/**************************
+** Dim State Styles ***
+***************************/
+
+.dim-element-hover,
+.dim-element-click {
+  display: block;
+  opacity: 0.79;
+  -o-transition: opacity 5s;
+  -ms-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  -webkit-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  #map-modal {
+    top: 75px;
+    left: 0;
+  }
+
+  #map-modal .modal-dialog.modal-md {
+    max-width: 50% !important;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .us-map-desktop {
+    display: none;
+  }
+
+  .us-map-mobile {
+    display: block;
+  }
+
+  /**************************
+  **** Mobile Dropdown ****
+  ***************************/
+
+  .dropdown {
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+  }
+
+  .dropdown .dropdown-heading {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #2B308E;
+  }
+
+  .dropdown .dropdown-toggle .dropdown-arrow-down {
+    margin: 5px 5px 0px 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .dropdown .dropdown-toggle {
+    padding: 0;
+  }
+
+  .dropdown .dropdown-toggle .toggle-arrow {
+    -webkit-transform: rotate(180deg) !important;
+       -moz-transform: rotate(180deg) !important;
+        -ms-transform: rotate(180deg) !important;
+         -o-transform: rotate(180deg) !important;
+            transform: rotate(180deg) !important;
+  }
+
+  .dropdown .dropdown-toggle,
+  .dropdown.show .dropdown-toggle {
+    padding: 10px;
+    background: #F1F3F2;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #2B308E;
+  }
+
+  .dropdown-toggle::after {
+      display: none;
+  }
+
+  .dropdown-menu.show {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .dropdown-menu li {
+    background: #00456B;
+    border-bottom: 1px solid #484E9D;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  /**************************
+  **** Mobile Carousel ****
+  ***************************/
+
+  #state-carousel {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../images/mobile/bg/alabama-mobile-bg.jpg");
+  }
+
+  #state-carousel.al-slide {
+    background-image: url("../images/mobile/bg/alabama-mobile-bg.jpg");
+  }
+
+  #state-carousel.ak-slide {
+    background-image: url('../images/mobile/bg/alaska-mobile-bg.jpg');
+  }
+
+  #state-carousel.az-slide {
+    background-image: url('../images/mobile/bg/arizona-mobile-bg.jpg');
+  }
+
+  #state-carousel.ar-slide {
+    background-image: url('../images/mobile/bg/arkansas-mobile-bg.jpg');
+  }
+
+  #state-carousel.ca-slide {
+    background-image: url('../images/mobile/bg/california-mobile-bg.jpg');
+  }
+
+  #state-carousel.co-slide {
+    background-image: url('../images/mobile/bg/colorado-mobile-bg.jpg');
+  }
+
+  #state-carousel.ct-slide {
+    background-image: url('../images/mobile/bg/connecticut-mobile-bg.jpg');
+  }
+
+  #state-carousel.de-slide {
+    background-image: url('../images/mobile/bg/delaware-mobile-bg.jpg');
+  }
+
+  #state-carousel.fl-slide {
+    background-image: url('../images/mobile/bg/florida-mobile-bg.jpg');
+  }
+
+  #state-carousel.ga-slide {
+    background-image: url('../images/mobile/bg/georgia-mobile-bg.jpg');
+  }
+
+  #state-carousel.hi-slide {
+    background-image: url('../images/mobile/bg/hawaii-mobile-bg.jpg');
+  }
+
+  #state-carousel.id-slide {
+    background-image: url('../images/mobile/bg/idaho-mobile-bg.jpg');
+  }
+
+  #state-carousel.il-slide {
+    background-image: url('../images/mobile/bg/illinois-mobile-bg.jpg');
+  }
+
+  #state-carousel.in-slide {
+    background-image: url('../images/mobile/bg/indiana-mobile-bg.jpg');
+  }
+
+  #state-carousel.ia-slide {
+    background-image: url('../images/mobile/bg/iowa-mobile-bg.jpg');
+  }
+
+  #state-carousel.ks-slide {
+    background-image: url('../images/mobile/bg/kansas-mobile-bg.jpg');
+  }
+
+  #state-carousel.ky-slide {
+    background-image: url('../images/mobile/bg/kentucky-mobile-bg.jpg');
+  }
+
+  #state-carousel.la-slide {
+    background-image: url('../images/mobile/bg/louisiana-mobile-bg.jpg');
+  }
+
+  #state-carousel.me-slide {
+    background-image: url('../images/mobile/bg/maine-mobile-bg.jpg');
+  }
+
+  #state-carousel.md-slide {
+    background-image: url('../images/mobile/bg/maryland-mobile-bg.jpg');
+  }
+
+  #state-carousel.ma-slide {
+    background-image: url('../images/mobile/bg/massachusetts-mobile-bg.jpg');
+  }
+
+  #state-carousel.mi-slide {
+    background-image: url('../images/mobile/bg/michigan-mobile-bg.jpg');
+  }
+
+  #state-carousel.mn-slide {
+    background-image: url('../images/mobile/bg/minnesota-mobile-bg.jpg');
+  }
+
+  #state-carousel.ms-slide {
+    background-image: url('../images/mobile/bg/mississippi-mobile-bg.jpg');
+  }
+
+  #state-carousel.mo-slide {
+    background-image: url('../images/mobile/bg/missouri-mobile-bg.jpg');
+  }
+
+  #state-carousel.mt-slide {
+    background-image: url('../images/mobile/bg/montana-mobile-bg.jpg');
+  }
+
+  #state-carousel.ne-slide {
+    background-image: url('../images/mobile/bg/nebraska-mobile-bg.jpg');
+  }
+
+  #state-carousel.nv-slide {
+    background-image: url('../images/mobile/bg/nevada-mobile-bg.jpg');
+  }
+
+  #state-carousel.nh-slide {
+    background-image: url('../images/mobile/bg/new-hampshire-mobile-bg.jpg');
+  }
+
+  #state-carousel.nj-slide {
+    background-image: url('../images/mobile/bg/new-jersey-mobile-bg.jpg');
+  }
+
+  #state-carousel.nm-slide {
+    background-image: url('../images/mobile/bg/new-mexico-mobile-bg.jpg');
+  }
+
+  #state-carousel.ny-slide {
+    background-image: url('../images/mobile/bg/new-york-mobile-bg.jpg');
+  }
+
+  #state-carousel.nc-slide {
+    background-image: url('../images/mobile/bg/north-carolina-mobile-bg.jpg');
+  }
+
+  #state-carousel.nd-slide {
+    background-image: url('../images/mobile/bg/north-dakota-mobile-bg.jpg');
+  }
+
+  #state-carousel.oh-slide {
+    background-image: url('../images/mobile/bg/ohio-mobile-bg.jpg');
+  }
+
+  #state-carousel.ok-slide {
+    background-image: url('../images/mobile/bg/oklahoma-mobile-bg.jpg');
+  }
+
+  #state-carousel.or-slide {
+    background-image: url('../images/mobile/bg/oregon-mobile-bg.jpg');
+  }
+
+  #state-carousel.pa-slide {
+    background-image: url('../images/mobile/bg/pennsylvania-mobile-bg.jpg');
+  }
+
+  #state-carousel.ri-slide {
+    background-image: url('../images/mobile/bg/rhode-island-mobile-bg.jpg');
+  }
+
+  #state-carousel.sc-slide {
+    background-image: url('../images/mobile/bg/south-carolina-mobile-bg.jpg');
+  }
+
+  #state-carousel.sd-slide {
+    background-image: url('../images/mobile/bg/south-dakota-mobile-bg.jpg');
+  }
+
+  #state-carousel.tn-slide {
+    background-image: url('../images/mobile/bg/tennessee-mobile-bg.jpg');
+  }
+
+  #state-carousel.tx-slide {
+    background-image: url('../images/mobile/bg/texas-mobile-bg.jpg');
+  }
+
+  #state-carousel.ut-slide {
+    background-image: url('../images/mobile/bg/utah-mobile-bg.jpg');
+  }
+
+  #state-carousel.vt-slide {
+    background-image: url('../images/mobile/bg/vermont-mobile-bg.jpg');
+  }
+
+  #state-carousel.va-slide {
+    background-image: url('../images/mobile/bg/virginia-mobile-bg.jpg');
+  }
+
+  #state-carousel.wa-slide {
+    background-image: url('../images/mobile/bg/washington-mobile-bg.jpg');
+  }
+
+  #state-carousel.wv-slide {
+    background-image: url('../images/mobile/bg/west-virginia-mobile-bg.jpg');
+  }
+
+  #state-carousel.wi-slide {
+    background-image: url('../images/mobile/bg/wisconsin-mobile-bg.jpg');
+  }
+
+  #state-carousel.wy-slide {
+    background-image: url('../images/mobile/bg/wyoming-mobile-bg.jpg');
+  }
+
+  #state-carousel .state-carousel-content {
+    font-size: 1.4rem;
+  }
+
+}

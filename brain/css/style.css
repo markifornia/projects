@@ -1,0 +1,393 @@
+/*
+* style.css
+* @author Mark Matanza
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color: #00456B;
+}
+
+/***********************************
+**** Illustrator Default Styles ****
+******* DO NOT REMOVE / EDIT *******
+************************************/
+
+.st0{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+.st1{fill:#DBBAB6;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st2{fill:none;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st3{fill:none;stroke:#CCCCCC;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;}
+.st4{fill:#CCCCCC;}
+.st5{fill:#CCCCCC;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st6{fill:#E0E0E0;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st7{fill:none;}
+.st8{fill:#B0FFB0;}
+.st9{fill:#B0FFB0;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st10{fill:#8C83FF;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st11{fill:#A4D4FF;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st12{fill:#FFFFB3;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st13{fill:none;stroke:#00456B;stroke-miterlimit:10;}
+.st14{fill:#D680F9;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st15{fill:#CBB3FF;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st16{fill:#F7B1FF;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st17{fill:#C0FCF5;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+.st18{fill:#00456B;}
+.st19{font-family:'Oswald';}
+.st20{font-size:29.4756px;}
+.st21{fill:#73C067;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st22{display:none;}
+.st23{display:inline;}
+.st24{fill:#73C067;stroke:#00456B;stroke-miterlimit:10;}
+.st25{fill:#00456B;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st26{fill:#73C067;stroke:#00456B;stroke-width:0.5;stroke-miterlimit:10;}
+
+h2 {
+  text-transform: uppercase;
+  color: #00456B;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brain-map-desktop svg {
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.brain-map-desktop svg:hover {
+    cursor: pointer;
+}
+
+.brain-map-desktop svg path:hover {
+    cursor: pointer;
+}
+
+.hide-section {
+  display: none !important;
+}
+
+.wrapper {
+  margin: 100px auto;
+  padding: 0;
+  width: 980px;
+  max-width: 100%;
+}
+
+.brain-content-top {
+
+}
+
+.brain-content-bottom h4 {
+  margin: 0 0 50px 0;
+}
+
+.brain-map-main {
+  margin: 30px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.brain-map-desktop {
+  display: block;
+}
+
+.brain-map-mobile {
+  display: none;
+}
+
+/**************************
+** Modal Custom Styles ***
+***************************/
+
+#brain-modal {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  padding: 0 !important;
+  z-index: 99999 !important;
+}
+
+#brain-modal .modal-dialog.modal-sm {
+    max-width: 40% !important;
+}
+
+#brain-modal .modal-content ul {
+  margin-left: 30px;
+}
+
+#brain-modal .modal-content ul li {
+  margin: 10px 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+#brain-modal .modal-content {
+  border: 1px solid #00456B;
+  color: #00456B;
+}
+
+#brain-modal .modal-header {
+  background: #73C067;
+  color: #ffffff;
+  border-bottom: 1px solid #00456B;
+  border-top-right-radius: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+#brain-modal .modal-header .modal-title {
+  line-height: normal;
+  padding: 10px 10px 10px 20px;
+}
+
+#brain-modal .modal-header .close {
+  text-transform: uppercase;
+  text-shadow: none;
+  color: #ffffff;
+  background: #00456B;
+  opacity: 1;
+  font-weight: 300;
+  margin: 0;
+}
+
+#brain-modal .modal-body {
+
+}
+
+.modal-open {
+    padding-right: 0px !important;
+    overflow: scroll;
+}
+
+.modal-backdrop {
+  display: none;
+  background-color: transparent;
+}
+
+.modal-backdrop.show {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/**************************
+**** Modal Positioning ****
+***************************/
+
+.prefrontal-cortex-modal {
+  top: 80px;
+  left: 80px;
+}
+
+.frontal-lobe-modal {
+  top: 15px;
+  left: 150px;
+}
+
+.thalamus-modal {
+  top: -20px;
+}
+
+.amygdala-modal {
+  top: -30px;
+}
+
+.cerebellum-modal {
+  top: 30px;
+}
+
+.hippocampus-modal {
+  left: -150px;
+}
+
+.temporal-lobe-modal {
+  left: -100px;
+}
+
+/**************************
+* Global Brain Piece Animations
+***************************/
+
+.brain-group path {
+  -o-transition: fill .5s;
+  -ms-transition: fill .5s;
+  -moz-transition: fill .5s;
+  -webkit-transition: fill .5s;
+  transition: fill .5s;
+}
+
+/* hover and click events */
+.active-element-hover path,
+.active-element-click path {
+  fill: #73C067 !important;
+  stroke: #00456B !important;
+
+  -o-transition: fill .5s;
+  -ms-transition: fill .5s;
+  -moz-transition: fill .5s;
+  -webkit-transition: fill .5s;
+  transition: fill .5s;
+
+}
+
+.active-element-hover circle,
+.active-element-click circle {
+  fill: #00456B !important;
+}
+
+/* dim states */
+
+.dim-element-hover path,
+.dim-element-click path {
+  fill: #ffffff !important;
+  /* stroke: #cecece !important;  */
+  stroke-width: 0.5 !important;
+  stroke-miterlimit: 10 !important;
+  opacity: .2 !important;
+  -o-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+
+}
+
+.dim-element-hover text,
+.dim-element-hover rect,
+.dim-element-hover line,
+.dim-element-click text,
+.dim-element-click rect,
+.dim-element-click line {
+    opacity: .2 !important;
+    -o-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.dim-element-hover circle,
+.dim-element-click circle {
+  fill: rgba(255, 255, 255, .9) !important;
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+  .wrapper {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  .brain-map-main {
+    margin: 20px 0;
+  }
+
+  .brain-map-desktop {
+    display: none;
+  }
+
+  .brain-map-mobile {
+    display: block;
+  }
+
+  #brain-modal {
+    padding: 0 1em !important;
+    left: 0;
+    top: 0;
+  }
+
+  #brain-modal .modal-dialog.modal-sm {
+      max-width: 100% !important;
+  }
+
+  .modal-open .modal {
+    overflow-y: hidden;
+  }
+
+  /**************************
+  **** Mobile Dropdown ****
+  ***************************/
+
+  .dropdown {
+    margin: 10px 0px 30px 0;
+    text-transform: uppercase;
+  }
+
+  .dropdown .dropdown-heading {
+    padding: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #00456B;
+  }
+
+  .dropdown .dropdown-toggle .dropdown-arrow-down {
+      padding: 12px;
+      background: #73C067;
+  }
+
+  .dropdown .dropdown-toggle {
+    padding: 0;
+  }
+
+  .dropdown .dropdown-toggle,
+  .dropdown.show .dropdown-toggle {
+    background: #F1F3F2;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #00456B;
+  }
+
+  .dropdown-toggle::after {
+      display: none;
+  }
+
+  .dropdown-menu.show {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .dropdown-menu li {
+    background: #00456B;
+    border-bottom: 1px solid #72C166;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+}
