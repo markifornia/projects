@@ -5,47 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fizz Buzz</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
-
   <link href="css/style.css?version=1.0" rel="stylesheet">
-
 </head>
 <body>
 
   <div class="container">
     <h1>FizzBuzz</h1>
     <p>The infamous FizzBuzz interview question, or just a simple javascript program often brought up in courses, tutorials and editors. I decided to build a simple webpage illustrating this program in action using simple HTML, CSS and vanilla Javascript.</p>
-
     <ul id="list"></ul>
   </div>
 
   <script>
 
+    // document.ready()
+    // vanilla javascript, intentional
     window.addEventListener('DOMContentLoaded', (event) => {
 
       for (let i = 0; i < 100 ; i++) {
 
-        // Create IIFE to
-        // capture context
+        // Encapsulate execution context
+        // capture nested scope `i`
         (function(j) {
 
           let output = '';
 
+          // setTimeout intervals
           setTimeout(function() {
 
             let ul = document.getElementById("list");
             let li = document.createElement("li");
 
-            if (j % 3 == 0) { output += 'Fizz'; }
-            if (j % 5 == 0) { output += 'Buzz'; }
+            if (j % 3 == 0) {
+              output += 'Fizz';
+            }
 
+            if (j % 5 == 0) {
+              output += 'Buzz';
+            }
+
+            // Add color to indicate
+            // `Fizzbuzz` instances
             if (j % 3 == 0 || j % 5 == 0 || (j % 3 == 0 && j % 5 == 0)) {
               li.className = 'colored';
             }
 
+            // Insert nodes to parent `#list`
             li.appendChild(document.createTextNode(output || j));
             ul.appendChild(li);
 
@@ -56,11 +63,8 @@
 
       }
 
-
     });
 
-
   </script>
-
 </body>
 </html>
