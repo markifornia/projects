@@ -8,7 +8,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
-  <link href="css/style.css?version=1.0" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bebas Neue', cursive, arial;
+      font-size: 1.6em;
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #FF00FF;
+      font-family: 'Coda Caption', sans-serif, arial;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    ul, li {
+      list-style-type: none;
+    }
+
+    ul li {
+      margin: 1em;
+      padding: 1em;
+      border: 5px solid #000000;
+    }
+
+    .container {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .colored {
+      color: #FF00FF;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,8 +57,9 @@
 
   <script>
 
-    // document.ready()
-    // vanilla javascript, intentional
+    // document.ready() equivalent
+    // In vanilla javascript, this is
+    // intentional for this exercise
     window.addEventListener('DOMContentLoaded', (event) => {
 
       for (let i = 0; i < 100 ; i++) {
