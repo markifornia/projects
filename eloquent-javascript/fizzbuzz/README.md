@@ -12,4 +12,4 @@ For instance, we can break the program into conceptual parts without even diving
 
 I think understanding these reusable pieces is much more beneficial than remembering the program line by line - though the sum of its parts does convey a meaningful process.
 
-The Javascript language, upon execution readily provides constructs these processes much adhere too. Thus, the concepts themselves must be clearly understood.
+The Javascript language, upon execution readily provides constructs these processes must necessarily adhere too. Thus, the concepts themselves must be clearly understood.
