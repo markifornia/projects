@@ -54,6 +54,8 @@
     <p>Perhaps a better title for this should be "Use a for loop to construct a triangle." But I digress, "Looping A Triangle", is much more eloquently phrased. So let us build one.</p>
   </div>
 
+  <div id="triangle"></div>
+
   <script>
 
     // document.ready() equivalent
@@ -61,6 +63,9 @@
     // intentional for this exercise
     window.addEventListener('DOMContentLoaded', (event) => {
 
+      for (let line = '#'; line.length < 10; line += '#') {
+        console.log(line);
+      }
 
 
     });
