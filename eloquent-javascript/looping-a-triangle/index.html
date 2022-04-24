@@ -11,7 +11,7 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 0 0 5em 0;
       font-family: 'Bebas Neue', cursive, arial;
       font-size: 1.6em;
     }
@@ -42,9 +42,17 @@
       text-align: center;
     }
 
-    .colored {
-      color: #FF00FF;
+    .triangleContainer {
+      position: relative;
     }
+
+    #triangle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+
   </style>
 </head>
 <body>
@@ -54,7 +62,9 @@
     <p>Perhaps a better title for this should be "Use a for loop to construct a triangle." But I digress, "Looping A Triangle", is much more eloquently phrased. So let us build one.</p>
   </div>
 
-  <div id="triangle"></div>
+  <div class="triangleContainer">
+    <div id="triangle"></div>
+  </div>
 
   <script>
 
@@ -63,10 +73,16 @@
     // intentional for this exercise
     window.addEventListener('DOMContentLoaded', (event) => {
 
-      for (let line = '#'; line.length < 10; line += '#') {
-        console.log(line);
+      let triangleDiv = document.querySelector("#triangle");
+      let triangleOutput = '';
+
+      for (let line = '#'; line.length < 20; line += '#') {
+
+        triangleOutput += line + "\n";
+
       }
 
+      triangleDiv.innerText = triangleOutput;
 
     });
 
