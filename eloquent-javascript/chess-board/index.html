@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chess Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0 0 5em 0;
+      font-family: 'Open Sans', cursive, arial;
+      font-size: 1.6em;
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #FF00FF;
+      font-family: 'Coda Caption', sans-serif, arial;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    ul, li {
+      list-style-type: none;
+    }
+
+    ul li {
+      margin: 1em;
+      padding: 1em;
+      border: 5px solid #000000;
+    }
+
+    .container {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .chessBoardContainer {
+      position: relative;
+    }
+
+    #chessBoardNoNest {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Chess Board</h1>
+    <p>What would happen if we set the size to "8", but omitted a nested loop? Let's give that a try first.</p>
+    <p>What we get is a vertial line, instead of spaces though, I inserted minus '-' signs for a better visualization.</p>
+  </div>
+
+  <div class="chessBoardContainer flex-container">
+    <div id="chessBoardNoNest"></div>
+  </div>
+
+  <script>
+
+    // document.ready() equivalent
+    // In vanilla javascript, this is
+    // intentional for this exercise
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+      let chessBoardNoNestDiv = document.querySelector("#chessBoardNoNest");
+
+      let board = '';
+      let size = 8;
+
+      for (let y = 0; y < size; y++) {
+
+        console.log(y);
+
+        if (y % 2 == 0) {
+          board += '-';
+        } else {
+          board += '#'
+        }
+
+        board += "\n";
+
+      }
+
+      chessBoardNoNestDiv.innerText = board;
+
+    });
+
+  </script>
+</body>
+</html>
