@@ -36,6 +36,10 @@
       border: 5px solid #000000;
     }
 
+    hr {
+      margin: 2em;
+    }
+
     .container {
       width: 75%;
       margin: 0 auto;
@@ -59,11 +63,18 @@
     <p>We discover, that the hashes and minus signs are being output vertically instead of horizontallys due to new line break.</p>
   </div>
 
-  <div class="chessBoardContainer flex-container">
+  <div class="flex-container">
     <div id="chessBoardNoNest"></div>
   </div>
 
+  <div class="container">
+    <hr>
+    <p>What if we took the line breaks out completely? Well, what we get is a horizontal line with alternating hashes and dashes.</p>
 
+    <div class="flex-container">
+      <div id="chessBoardNoLineBreak"></div>
+    </div>
+  </div>
 
   <script>
 
@@ -101,6 +112,24 @@
     // Chessboard with nested loop, omit modulus operation
     window.addEventListener('DOMContentLoaded', (event) => {
 
+      let chessBoardNoLineBreak = document.querySelector("#chessBoardNoLineBreak");
+
+      let board = '';
+      let size = 8;
+
+      for (let y = 0; y < size; y++) {
+
+        console.log(y);
+
+        if (y % 2 == 0) {
+          board += '-';
+        } else {
+          board += '#'
+        }
+
+      }
+
+      chessBoardNoLineBreak.innerText = board;
 
     });
 
