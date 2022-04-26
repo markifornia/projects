@@ -42,16 +42,6 @@
       text-align: center;
     }
 
-    .chessBoardContainer {
-      position: relative;
-    }
-
-    #chessBoardNoNest {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-    }
-
     .flex-container {
       display: flex;
       align-items: center;
@@ -63,20 +53,25 @@
 <body>
 
   <div class="container">
-    <h1>Chess Board</h1>
+    <h1>CHESS BOARD</h1>
     <p>What would happen if we set the size to "8", but omitted a nested loop? Let's give that a try first.</p>
     <p>What we get is a vertial line, instead of spaces though, I inserted minus '-' signs for a better visualization.</p>
+    <p>We discover, that the hashes and minus signs are being output vertically instead of horizontallys due to new line break.</p>
   </div>
 
   <div class="chessBoardContainer flex-container">
     <div id="chessBoardNoNest"></div>
   </div>
 
+
+
   <script>
 
     // document.ready() equivalent
     // In vanilla javascript, this is
     // intentional for this exercise
+
+    // Chessboard with no nested loop
     window.addEventListener('DOMContentLoaded', (event) => {
 
       let chessBoardNoNestDiv = document.querySelector("#chessBoardNoNest");
@@ -99,6 +94,13 @@
       }
 
       chessBoardNoNestDiv.innerText = board;
+
+    });
+
+
+    // Chessboard with nested loop, omit modulus operation
+    window.addEventListener('DOMContentLoaded', (event) => {
+
 
     });
 
