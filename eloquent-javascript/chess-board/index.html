@@ -76,6 +76,16 @@
     </div>
   </div>
 
+  <div class="container">
+    <hr>
+    <p>How about we do a basic loop?</p>
+
+    <div class="flex-container">
+      <div id="chessBoardNestedLoop"></div>
+    </div>
+  </div>
+
+
   <script>
 
     // document.ready() equivalent
@@ -130,6 +140,31 @@
       }
 
       chessBoardNoLineBreak.innerText = board;
+
+    });
+
+    // Chessboard, just a nested loop
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+      let chessBoardNestedLoop = document.querySelector("#chessBoardNestedLoop");
+
+      let board = '';
+      let size = 8;
+
+      for (let y = 0; y < size; y++) {
+
+        console.log(y + ' outerloop');
+
+        for (let z = 0; z < size; z++) {
+
+          console.log(y + ' innerloop');
+          console.log(z + ' outerloop');
+
+        }
+
+      }
+
+      chessBoardNestedLoop.innerText = board;
 
     });
 
