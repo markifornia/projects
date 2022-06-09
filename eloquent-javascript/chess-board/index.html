@@ -85,6 +85,15 @@
     </div>
   </div>
 
+  <div class="container">
+    <hr>
+    <p>So we learn that the chessboard is constructed vertically line by line, not horizontally - although it may appear that way. Now that we have a better understanding, we write the program outright.</p>
+
+    <div class="flex-container">
+      <div id="chessBoardFinal"></div>
+    </div>
+  </div>
+
 
   <script>
 
@@ -153,18 +162,44 @@
 
       for (let y = 0; y < size; y++) {
 
-        // board += '# (y outside) ';
+        board += "\n" + '# (' + y + ' outside) ' + "\n\n";
 
         for (let z = 0; z < size; z++) {
 
-            board += '# (y inside) ';
-          board += '# (z) ';
+            board += '# (' + y + ' y inside) ' + "\n";
+            board += '# (' + z + ' inside) ' + "\n";
 
         }
 
       }
 
       chessBoardNestedLoop.innerText = board;
+
+    });
+
+    // Construct the chessboard outright
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+      let size = 8;
+
+      // define an empty string
+      let board = '';
+
+      for (let y = 0; y < size; y++) {
+
+        for (let z = 0; z < size; z++) {
+
+          if ((y + z) % 2 == 0) {
+            board += "  ";
+          } else {
+            board += '#'
+          }
+
+        }
+        board += "\n";
+      }
+
+      chessBoardFinal.innerText = board;
 
     });
 
