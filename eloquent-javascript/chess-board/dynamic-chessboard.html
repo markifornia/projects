@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dynamic Chessboard</title>
+
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-border: none;
+      }
+
+      #chessboard {
+        text-align: center;
+        padding-top: 5%;
+      }
+
+      #chessboard span {
+        display: inline-block;
+      }
+
+      .new-line div {
+        display: inline-block;
+      }
+
+      .black-square {
+        border: 1px solid #000000;
+        background: #000000;
+        width: 10%;
+      }
+
+      .black-square:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+
+      .white-square {
+        border: 1px solid #000000;
+        width: 10%;
+      }
+
+      .white-square:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+
+    </style>
+
+</head>
+<body>
+
+  <div id="chessboard">
+
+
+  </div>
+
+
+<script>
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+
+    let chessboard = document.querySelector("#chessboard");
+
+    let grid = 8; // Number data type
+    let board = ''; // String data type
+
+    for (let x = 0; x < grid; x++) {
+
+      for (let y = 0; y < grid; y++) {
+
+        if ((x + y) % 2 == 0) {
+          board += '<span class="white-square"></span>';
+        } else {
+          board += '<span class="black-square"></span>';
+        }
+
+
+      }
+
+      board += "<br>";
+
+    }
+
+    chessboard.innerHTML = board;
+
+  });
+
+
+</script>
+
+
+</body>
+</html>
