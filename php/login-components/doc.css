@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, sans-serif;
+	font-size: 100%;
+	background: #f0f0f0;
+	}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+	font-family: 'Droid Sans', sans-serif;
+	color: #30324d;
+	}
+	
+h1 {
+	margin: 0 0 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #30324d;
+	font-size: 2em;
+	}
+
+h2, h3, h4, h5 {
+	margin: 1em 0 1em 0;
+	font-size: 1.5em;
+	}
+
+#canvas {
+	margin: 0 auto;
+	padding: 2em 2em 5em 2em;
+	max-width: 960px;
+	}
+	
+#canvas p {
+	line-height: 1.5em;
+}

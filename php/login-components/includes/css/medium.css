@@ -1,0 +1,50 @@
+/*
+* This file is the development
+* CSS file for adapting to tablet/
+* desktop browsers.
+*/
+
+
+#header h1 {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: left;
+	line-height: normal;
+	}
+
+/**********************************
+* SECURE MEMBER PAGE
+***********************************/
+	
+#member-container {
+	margin: 0 auto;
+	max-width: 1000px;
+	min-height: 800px;
+	}
+
+/**********************************
+* SECURE PORTAL LOGIN PAGE
+***********************************/	
+	
+#outer-main-portal {
+	margin: 0 auto;
+	padding: 7em 0;
+	width: 480px;
+	}
+	
+#inner-main-portal {
+	padding: 2em 3em 2em 3em;
+	}
+	
+form#portalForm div input {
+	width: 100%;
+	}
+	
+/**********************************
+* FOOTER
+***********************************/
+	
+#footer .copy {
+	margin: 0 auto;
+	width: 1000px;
+	}

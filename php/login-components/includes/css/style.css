@@ -1,0 +1,339 @@
+/*
+Theme Name: Web Portal Theme
+Version: 	1.0
+Author: 	Mark Matanza
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-family: arial, sans-serif;
+	font-size: 100%;
+	color: #31323a;
+}
+
+/**********************************
+* PRESETS
+***********************************/
+
+ul, li {
+	list-style-type: none;
+	}
+	
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Open Sans', sans-serif;
+	}
+	
+.clear {
+	clear: both;
+	}
+
+a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	}
+	
+
+/**********************************
+* CANVAS
+***********************************/
+
+#canvas {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+	
+/**********************************
+* HEADER
+***********************************/
+
+#header {
+	padding: 0 2em;
+	background: #30324d;
+	}
+	
+#header h1 {
+	margin: 0;
+	width: auto;
+	text-align: left;
+	line-height: 1em;
+	float: none;
+	}
+	
+#header h1 a {
+	margin: 0;
+	padding: .4em 0;
+	display: block;
+	color: #ffffff;
+	}
+	
+#inner-header {
+	margin: 0;
+	width: auto;
+	}
+	
+#login-status {
+	margin: 0 0 .7em 0;
+	padding: 0;
+	float: left;
+	}
+	
+#login-status  li {
+	margin: .3em 1em .3em 0;
+	float: left;
+	}
+	
+i.fa {
+	color: #fe5d55;
+	}
+	
+a {
+	color: #fe5d55;
+	text-decoration: none;
+	}
+	
+/**********************************
+* SECURE MEMBER PAGE
+***********************************/
+
+#member-container {
+	margin: 0;
+	padding: 3em 2em;
+	background: #ffffff;
+	max-width: auto;
+	min-height: 400px;
+	}
+
+#member-container #avatar {
+	margin: 1em 0;
+	}
+
+/**********************************
+* SECURE PORTAL LOGIN PAGE
+***********************************/
+
+#portal-container {
+	margin: 0;
+	padding: 0;
+	background-image: url("../../includes/images/portal-bg.png");
+	background-position: 0 0;
+	background-repeat: repeat;
+	background-color: #ffffff;
+	}
+
+#outer-main-portal {
+	margin: 0;
+	padding: 4em 1em;
+	width: auto;
+	}
+	
+#inner-main-portal {
+	margin: 0;
+	padding: 2em 1em 2em 1em;
+	background-color: #f0f0f0;
+	background: rgba(255, 255, 255, .3);
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-radius: 0px 0px 5px 5px;
+	-webtkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	}
+	
+#portal-instructions {
+	margin: 0 0 2em 0;
+	padding: 0 0 1em 0;
+	font-size: .789em;
+	border-bottom: 1px solid #cccccc;
+	box-shadow: 0px 1px 1px -1px #ffffff;
+	-moz-box-shadow: 0px 1px 1px -1px #ffffff;
+	-webkit-box-shadow: 0 1px 1px -1px #ffffff;
+	}
+
+#portal-form-title {
+	margin: 0;
+	padding: 1em;
+	background: #30324d;
+	border-radius: 5px 5px 0px 0px;
+	-webtkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	}
+	
+#portal-form-title h2 {
+	color: #ffffff;
+	font-size: 1em;
+	}
+	
+form#portalForm {
+	margin: 0;
+	padding: 0;
+	}
+	
+form#portalForm label {
+	margin: 0 0 .1em 0;
+	padding: 0;
+	display: block;
+	color: #666666;
+	font-size: 1em;
+	}
+	
+form#portalForm div {
+	margin: 1em 0;
+	padding: 0;
+	}
+	
+form#portalForm div input {
+	margin: 0;
+	padding: .2em .5em;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 5px 5px 5px 5px;
+	-webtkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border: 1px solid #cccccc;
+	font-family: Helvetica;
+	font-size: 20px;
+	width: 92%;
+	display: block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	}
+	
+form#portalForm div input:hover,  form#portal-form div input:focus {
+	background-color: #ffffff;
+	background: rgba(48, 50, 77, .1);
+	}
+	
+form#portalForm div input#submit {
+	margin: 1em 0 0 0;
+	padding: .8em;
+	display: block;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	background: #30324d;
+	border: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	width: 100px;
+	float: right;
+	letter-spacing: .5px;
+	}
+	
+	
+form#portalForm div input#submit:hover {
+	background: #fe5d55;
+	}
+
+.help {
+	margin: 0;
+	padding: 0;
+	font-size: .789em;
+	display: inline-block;
+	line-height: 1.5em;
+	}
+	
+/**********************************
+* FOOTER
+***********************************/
+	
+#footer {
+	margin: 0;
+	padding: 2em;
+	background: #30324d;
+	color: #b7b9da;
+	}
+	
+#footer .copy {
+	margin: 0;
+	width: auto;
+	}
+	
+#footer .copy a {
+	color: #b7b9da;
+	}
+	
+#footer .copy a:hover {
+	color: #FE5D55;
+	}
+	
+	
+@media only screen and (min-width: 520px) {
+
+
+	#header h1 {
+		margin: 0;
+		text-align: left;
+		line-height: normal;
+		float: left;
+		}
+		
+	#inner-header {
+		margin: 0 auto;
+		max-width: 1000px;
+		}
+		
+	#login-status {
+		margin: 1.4em 0;
+		padding: 0;
+		float: right;
+		}
+		
+	#login-status li {
+		margin: 0 0 0 1em;
+	}
+	
+	/**********************************
+	* SECURE MEMBER PAGE
+	***********************************/
+		
+	#member-container {
+		margin: 0 auto;
+		max-width: 1000px;
+		min-height: 800px;
+		}
+
+	/**********************************
+	* SECURE PORTAL LOGIN PAGE
+	***********************************/	
+		
+	#outer-main-portal {
+		margin: 0 auto;
+		padding: 7em 0;
+		width: 480px;
+		}
+		
+	#inner-main-portal {
+		padding: 2em 3em 2em 3em;
+		}
+		
+	form#portalForm div input {
+		width: 100%;
+		}
+		
+	/**********************************
+	* FOOTER
+	***********************************/
+		
+	#footer .copy {
+		margin: 0 auto;
+		width: 1000px;
+		}
+
+}
