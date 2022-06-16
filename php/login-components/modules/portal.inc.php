@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION['user_name'])) {
-	header("Location: http://localhost/beacon/?p=member");
-} 
+	header("Location: http://localhost/login/?p=member");
+}
 /*
 * Template: Web Portal Page
 */
@@ -17,7 +17,7 @@ require_once('includes/login.php');
 						<p>Enter your username and password in the fields provided below.</p>
 					</div>
 					<div id="secureMessage">
-					<?php 
+					<?php
 					if(is_array($secureMessage) && !empty($secureMessage)) {
 						foreach($secureMessage as $secureError) {
 							echo $secureError;
@@ -47,7 +47,3 @@ require_once('includes/login.php');
 				</div>
 			</div>
 		</div>
-
-
-
-

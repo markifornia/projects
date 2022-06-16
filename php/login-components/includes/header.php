@@ -27,20 +27,20 @@ if(!isset($page_title)) {
 			<div id="inner-header">
 				<h1>
 					<?php if(isset($_SESSION['user_name'])) { ?>
-					<a href="/beacon/?p=member" title="Web Portal"><i class="fa fa-spinner"></i> Web Portal</a>	  
+					<a href="/login/?p=member" title="Web Portal"><i class="fa fa-spinner"></i> Web Portal</a>
 					 <?php } else { ?>
-					<a href="/beacon/" title="Web Portal"><i class="fa fa-spinner"></i> Web Portal</a>
+					<a href="/login/" title="Web Portal"><i class="fa fa-spinner"></i> Web Portal</a>
 					<?php } ?>
 				</h1>
 					<?php if(isset($_SESSION['user_name'])) { ?>
 				<div id="login-status">
 					<ul>
-						<li><i class="fa fa-user"></i> <a href="/beacon/?p=member" title="Logged In">Logged in as <?php echo $_SESSION['user_name']; ?></a></li>
+						<li><i class="fa fa-user"></i> <a href="/login/?p=member" title="Logged In">Logged in as <?php echo $_SESSION['user_name']; ?></a></li>
 						<li>
-						<?php 
+						<?php
 						if( (isset($_SESSION['user_name'])) && (!strpos($_SERVER['PHP_SELF'], 'logout')) ){
-							echo '<i class="fa fa-power-off"></i> <a href="/beacon/?p=logout" title="Logout">Logout</a>';
-						} 
+							echo '<i class="fa fa-power-off"></i> <a href="/login/?p=logout" title="Logout">Logout</a>';
+						}
 						?>
 						</li>
 					</ul>

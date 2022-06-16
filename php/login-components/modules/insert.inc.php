@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SESSION['admin'])) {
-	header("Location: http://localhost/beacon/");
+	header("Location: http://localhost/login/");
 }
 
 /*
@@ -12,7 +12,7 @@ if(!isset($_SESSION['admin'])) {
 $username = 'username';
 $password = 'password';
 
-$sql = sprintf("INSERT INTO users " . "(user_name, user_pass) VALUES ('%s', '%s');", mysql_real_escape_string($beacon), mysql_real_escape_string(crypt($password, $username)));
+$sql = sprintf("INSERT INTO users " . "(user_name, user_pass) VALUES ('%s', '%s');", mysql_real_escape_string($login), mysql_real_escape_string(crypt($password, $username)));
 
 mysqli_query($dbc, $sql) or die("<p>Didnt work</p>" . mysqli_error($dbc));
 ?>

@@ -30,13 +30,13 @@ if (stristr($_SERVER['HTTP_HOST'], 'local') || (substr($_SERVER['HTTP_HOST'], 0,
 
 // Determine location of files and the URL of the site:
 // Allow for development on different servers.
-if($local) { 
+if($local) {
 
         // Always debug when running locally:
         $debug = TRUE;
 
         // Define the constants:
-        define('BASE_URI', 'C:\\wamp\\www\\beacon\\');
+        define('BASE_URI', 'C:\\wamp\\www\\login\\');
         define('BASE_URL', 'http://localhost/');
         define('DB', 'localhost');
 
@@ -120,12 +120,12 @@ function escape_date($data) {
 
 	// Need the connection:
 	global $dbc;
-	
+
 	// Address Magic Quotes:
 	if(ini_get('magic_quotes_gpc')) {
 		$data = stripslashes($data);
 	}
-	
+
 	// Trim and escape:
 	return mysqli_real_escape_string($dbc, trim($data));
 

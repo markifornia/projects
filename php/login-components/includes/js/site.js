@@ -1,7 +1,7 @@
 /*
-* Contact form handler 
+* Contact form handler
 * using the $.ajax object
-* the handle requests sent 
+* the handle requests sent
 * to the server.
 */
 
@@ -18,9 +18,9 @@ $("#submit").click(function() {
 
 		secureMessage.hide().html('<p><i class="fa fa-exclamation-triangle"></i> Please enter both username and password</p>').fadeIn("slow");
 		return false;
-		
+
 	} else {
-	
+
 		$.ajax({
 			type: "POST",
 			url: formAction,
@@ -29,13 +29,13 @@ $("#submit").click(function() {
 				secureMessage.html('<p><img src="includes/images/loader.gif" alt="Loading..."> Verifying...</p>');
 			},
 			success: function(response) {
-		
+
 				if(response == 'success') {
-	
-					window.location.href = 'http://localhost/beacon/?p=member';
-		
+
+					window.location.href = 'http://localhost/login/?p=member';
+
 				} else {
-				
+
 					secureMessage.hide().html(response).fadeIn("slow");
 				}
 			},
@@ -43,12 +43,12 @@ $("#submit").click(function() {
 				secureMessage.html('<p><i class="fa fa-exclamation-triangle"></i> Please try again in a few moments.</p>');
 			}
 		});
-	
+
 	}
-	
+
 	portalForm.submit(function() {
 		return false;
 	});
-	
-	
+
+
 }); // END click event
