@@ -30,6 +30,7 @@ const hummus = function(factor) {
   // call the nested function
   ingredient(1, "can", "chickpeas");
   ingredient(0.25, "cup", "tahini");
+  ingredient(0.25, "cup", "lemon juice")
 
 
 }
