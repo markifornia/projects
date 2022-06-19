@@ -1,3 +1,3 @@
-# Some php scripts salvaged from long ago
+# A mixed bag of PHP code
 
-This directory contains some php code, yes some are outdated but the underlying principles have remained valuable to me.
+This directory contains bits & pieces of PHP code
