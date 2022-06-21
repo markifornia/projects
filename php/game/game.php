@@ -4,12 +4,17 @@ class Game {
 
 
   public const break = "\n";
-  public $name = 'Dig Dug';
-  public $price = '14.99';
-  public $photo = 'dig-dug.jpg';
+  public $name = '';
+  public $price = '';
+  public $photo = '';
   public $dir = 'games/';
 
-  function __construct() {}
+  function __construct($name, $price, $photo) {
+    $this->name = $name;
+    $this->price = $price;
+    $this->photo = $photo;
+    $this->directory = $directory;
+  }
 
   function get_game() {
     echo $this->name.self::break;
@@ -19,5 +24,8 @@ class Game {
 
 }
 
-$game = new Game();
+$game = new Game('Dig Dug', '19.99', 'dig-dug.jpg');
+$game->get_game();
+
+$game = new Game('Food Fight', '19.99', 'food-fight.jpg');
 $game->get_game();
