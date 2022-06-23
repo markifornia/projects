@@ -3,9 +3,9 @@
 class Game {
 
   public const break = "\n";
-  public $name = '';
-  public $price = '';
-  public $photo = '';
+  public $name;
+  public $price;
+  public $photo;
   public $dir = 'games/';
 
   function __construct($name, $price, $photo) {
