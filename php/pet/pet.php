@@ -1,16 +1,6 @@
 <?php
 /**
 * A simple pet base class
-* 1. Dog
-* 2. Cat
-* 3. Cow
-* 4. Snake
-* 5. Lion
-* 6. Ape
-* 7. Pig
-* 8. Bird
-* 9. Duck
-* 10. Owl
 */
 
 class Pet {
@@ -24,7 +14,7 @@ class Pet {
     return $this->type;
   }
 
-  function makeSound() {
+  function bark() {
     return 'Ruff Ruff!!!';
   }
 
@@ -33,4 +23,4 @@ class Pet {
 $newPet = new Pet('Dog');
 echo 'I am a ' . $newPet->getPet() . "\n";
 
-echo 'I make this sound ' . $newPet->makeSound();
+echo 'I make this sound ' . $newPet->bark();
