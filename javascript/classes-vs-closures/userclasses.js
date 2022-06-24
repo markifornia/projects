@@ -1,9 +1,10 @@
 /*
-* Using Javascript classes
+* Using a simple Javascript user class
 */
 
-class UserClasses {
+class UserClass {
 
+  // accepts an object with 4 properties
   constructor({firstName, lastName, age, occupation}) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -20,3 +21,43 @@ class UserClasses {
   }
 
 }
+
+let newUser = new UserClass({firstName: 'Mark', lastName: 'Matanza', age: '42', occupation: 'Web Developer'});
+
+newUser.describeSelf();
+console.log(`Mark is ${newUser.getAge()} old`);
+
+/*
+* Using a simple Javascript user closure
+*/
+
+// Wrap in IIFE
+(function() {
+
+  let UserClosure = function({firstName, lastName, age, occupation }) {
+
+    return ({
+      describeUser() {
+        console.log(`My name is ${firstName} ${lastName}, I ${age} old, I work as a ${occupation}`);
+      },  
+      getAge: function() {
+        return age;
+      }
+    })
+  }
+
+console.log('-------------------------------------------------');
+
+// Begin call the closure 
+
+// Initialize user
+callUserClosure = UserClosure({firstName: 'Mark', lastName: 'Matanza', age: '42', occupation: 'Web Developer'});
+
+// Same syntax applies, use dot notation
+callUserClosure.describeUser();
+
+console.log(`Mark is ${callUserClosure.getAge()} old.`);
+
+})();
+
+
