@@ -75,7 +75,7 @@ $flip = array_flip($team);
 // print_r($flip);
 // echo '</pre>';
 
-$numbers = range(1, 10);
+$numbers = range(1, 20);
 // echo '<pre>';
 // print_r($numbers);
 // echo '</pre>';
@@ -84,8 +84,29 @@ $newNumbers = array_map(function($number) {
     return "Number ${number}";
 }, $numbers);
 
-echo '<pre>';
-print_r($newNumbers);
-echo '</pre>';
+// echo '<pre>';
+// print_r($newNumbers);
+// echo '</pre>';
+
+// array_filter
+// yeah I know snake case, mix it up
+$less_than_10 = array_filter($numbers, fn($number) => $number <= 15);
+
+// echo '<pre>';
+// print_r($less_than_10);
+// echo '</pre>';
+
+
+// array_reduce
+// perform arithmetic operations
+$numbers_array = range(1,2);
+
+// to better see this operation
+// I decreased the range to 2
+// 0 + 1 = 1
+// 1 + 2 = 3
+// Result 3
+$sum_of_numbers = array_reduce($numbers_array, fn($carry, $number) => $carry + $number);
+var_dump($sum_of_numbers);
 
 
