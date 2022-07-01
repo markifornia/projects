@@ -25,6 +25,6 @@ Methods
 
 #### Curious Questions
 
-1. Why does v-cloak need to be manually added?
+1. Why does v-cloak need to be manually added? This should be added to VueJS's base code by default.
 
 
