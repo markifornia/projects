@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <title>Vue 3 Basics</title>
+        <style>
+            .box {
+                background-color: purple;
+                height: 200px;
+                width: 200px;
+            }
+
+            .box.two {
+                background-color: red;
+            }
+
+            .box.three {
+                background-color: blue;
+            }
+
+            [v-cloak] {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        
+    <div id="app" v-cloak>
+        {{ greeting }}
+        <input @keyup.enter="greet(greeting + '!!!!!')" v-model="greeting" />
+
+        <hr />
+
+        <button @click="toggleBox">Toggle Box</button>
+        <div v-if="isVisible" class="box"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+
+        // Pass options object
+        let app = Vue.createApp({
+            data: function() {
+                return {
+                    greeting: 'Hello Vue 3!',
+                    isVisible: false, 
+                }
+            },
+            methods: {
+                toggleBox() {
+                    this.isVisible = !this.isVisible
+                },
+                greet(greeting) {
+                    console.log(greeting);
+                }
+            }   
+        });
+
+        // Interact with DOM
+        // A bit like getElementById
+        app.mount('#app');
+
+    </script>
+    </body>
+</html>
