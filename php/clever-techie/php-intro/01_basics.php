@@ -78,6 +78,24 @@ if (18 > 21) {
     echo "It's false";
 }
 
+// RELEASE_YEAR = '2013'
+if (RELEASE_YEAR > 2010) { // true
+    echo "The game was released after the year 2010".BR;
+
+} elseif (RELEASE_YEAR == 2000) { // false
+    echo "The game was released in the year 2000".BR;
+
+} elseif (RELEASE_YEAR < 2010) { // false
+    echo "The game was released before the year 2010".BR;
+
+} else {
+    echo "The game was released in 2010".BR;
+}
+
+// Switch statement
+
+
+
 
 
 
