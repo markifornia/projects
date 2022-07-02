@@ -11,6 +11,7 @@ Big thanks to Gwen for creating this roughly 3.5 hour video & covering commonly 
 - v-if (removing from the DOM)
 - v-show (display: none, however more performant)
 - v-on (events)
+- v-bind
 - @click
 
 #### Modifers:
@@ -20,8 +21,6 @@ Big thanks to Gwen for creating this roughly 3.5 hour video & covering commonly 
 
 #### Events: 
 - @click
-
-Methods
 
 #### Curious Questions
 
