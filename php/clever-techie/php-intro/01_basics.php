@@ -94,8 +94,120 @@ if (RELEASE_YEAR > 2010) { // true
 
 // Switch statement
 
+$best_game = 'StarCraft';
 
+switch($best_game) {
+    case 'StarCraft':
+        echo "The best strategy game of all time, you rock Blizzard!".BR;
+        break;
+    case 'The Witcher':
+        echo "The best RPG game of all time!".BR;
+        break;
+    case "The Mass Effect 3":
+        echo "The best RPG game of all time!".BR;
+        break;
+    case "Diablo":
+        echo "The best RPG game of all time!".BR;
+        break;
+}
 
+// Loops
+for ($i = 0; $i <= 10; $i++) {
+    echo $i.BR;
+}
 
+echo HR;
 
+// Ex: Loop through game genres (numeric keys)
+for ($key = 0; $key < count($game_genres); $key++) {
 
+    if (is_array($game_genres[$key])) {
+        for ($key2 = 0; $key2 < count($game_genres[$key]); $key2++) {
+            echo $game_genres[$key][$key2].BR;
+        }
+    } else {
+        echo $game_genres[$key].BR;
+    }
+}
+
+// Ex: Foreach loop (associative keys) 
+foreach ($years as $game => $year) {
+    echo "$game was released in $year".BR;
+}
+
+echo HR;
+
+// Do.. While Loop
+$i = 0;
+
+do {
+
+echo $i.BR; 
+$i++;
+
+} while ($i > 10);
+
+echo HR;
+
+// While Loop
+
+$c = 0;
+while ($c <= 10) {
+    echo $c.BR;
+    $c++;
+}
+
+echo HR;
+
+class Car {
+
+    public $make;
+    public $type;
+    public $color;
+    public $maxSpeed;
+
+    const BR = '<br>';
+    
+    public function stop() {
+        echo 'Stopping...';
+    }
+
+    public function accelerate() {
+        echo "$this->color $this->make $this->type is now accelerating".BR;
+    }
+    
+    public function decelerate() {
+        echo "$this->color $this->make $this->type is now decelrating".BR;
+    }
+    
+    public function honk() {    
+        echo "$this->color $this->make $this->type is honking".BR;
+    }   
+
+    public function turn_right() {
+        echo "$this->color $this->make $this->type is turning right".BR;
+    } 
+
+    public function print_info() {
+        echo "Make: $this->make".BR;
+        echo "Type: $this->type".BR;
+        echo "Color: $this->color".BR;
+        echo "Max Speed: $this->maxSpeed".BR;
+    } 
+
+}
+
+$yaris = new Car(); // object is created
+
+$yaris->make = 'Toyota'.BR;
+$yaris->type = 'Yaris'.BR;
+$yaris->color = 'White'.BR;
+$yaris->maxSpeed = '90mph'.BR;
+
+$yaris->stop();
+$yaris->accelerate();
+$yaris->decelerate();
+$yaris->honk();
+$yaris->turn_right();
+
+echo $yaris->print_info();
