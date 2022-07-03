@@ -26,14 +26,14 @@ function findSolution(target) {
 
 /*
 * (1) If the current number is the target number, the current history
-* is way to reach the target, so this history is kept for the next 
-* subequent recursion.
+* is way to reach the target, the solution is returned here.
 *
 * (2) If the current number is greater thatn the target, there is no
 * sense in continuing, so we return null.
 *
 * (3) Finally, if we're still below the target number, the function tries
-* both possible paths using (||)
+* both possible paths using (||), so this history is kept for the next 
+* subequent recursion.
 */
 
 //console.log(findSolution(24)); // (((1 * 3) + 5) * 3)
