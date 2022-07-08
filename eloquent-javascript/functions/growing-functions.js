@@ -9,7 +9,7 @@
 // In order to to count the length (how many digits),
 // the supplied parameter must first
 // be converted into a string
-function printFarmInventory(cows) {
+function printFarmInventory(cows, chickens) {
 
     let cowString = String(cows);
 
@@ -19,7 +19,15 @@ function printFarmInventory(cows) {
 
     console.log(`${cowString} Cows`);
 
+    let chickenString = String(chickens);
+    
+    while(chickenString.length < 3) {
+        chickenString = "0" + chickenString;
+    }
+
+    console.log(`${chickenString} Chickens`);
+
 }
 
-printFarmInventory(5); // 005
+printFarmInventory(5, 4); // 005
 
