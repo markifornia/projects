@@ -19,8 +19,23 @@ Big thanks to Gwen for creating this roughly 3.5 hour video & covering commonly 
 - @keyup.right
 - @keyup.prevent.stop
 
-#### Events: 
-- @click
+#### Lifecycle Hooks (Registering Lifecycle Hooks)[https://vuejs.org/guide/essentials/lifecycle.html#registering-lifecycle-hooks] 
+
+- Check if user is authorized
+- API Calls
+- Creating or removing events
+- Getting or cleaning up data
+
+Common Lifecycle hooks
+- beforeCreate()
+- created()
+- beforeMount()
+- mounted()
+- beforeUpdate()
+- updated()
+- beforeUnmount()
+- unmounted
+
 
 #### Curious Questions
 
