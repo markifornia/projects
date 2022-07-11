@@ -1,9 +1,9 @@
 
-(Programming with Mosh)[https://www.youtube.com/c/programmingwithmosh]
+[Programming with Mosh](https://www.youtube.com/c/programmingwithmosh)
 
-(Docker Tutorial)[https://www.youtube.com/watch?v=pTFZFxd4hOI]
+[Docker Tutorial](https://www.youtube.com/watch?v=pTFZFxd4hOI)
 
-Long time user of XAMPP, MAMP for general LAMP stack development but it's time to move over to the new kid on the block - (Docker)[https://www.docker.com/get-started/], for containerized apps.
+Long time user of XAMPP, MAMP for general LAMP stack development but it's time to move over to the new kid on the block - [Docker](https://www.docker.com/get-started/), for containerized apps.
 
 ### Outline
 - What is Docker?
