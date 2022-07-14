@@ -8,7 +8,7 @@ class Game {
   public $photo;
   public $dir = 'games/';
 
-  function __construct($name, $price, $photo) {
+  public function __construct($name, $price, $photo) {
     $this->name = $name;
     $this->price = $price;
     $this->photo = $photo;
