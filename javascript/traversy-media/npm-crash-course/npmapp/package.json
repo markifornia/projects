@@ -1,0 +1,20 @@
+{
+  "name": "npmapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "live-server"
+  },
+  "keywords": [],
+  "author": "Mark Matanza",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
