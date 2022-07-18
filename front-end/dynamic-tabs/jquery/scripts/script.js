@@ -26,14 +26,13 @@
             });
         });
 
-        const boxHeight = $(".tab").height();
-        $(".tab").mouseenter(function(){
-            $(this).animate({
-                //paddingTop: "10px"
+        $(".tab").mouseenter(function() {
+            $(this).find(".tab-title").animate({
+                top: "-10px"
             });
         }).mouseleave(function(){
-            $(this).animate({
-                height: boxHeight
+            $(this).find(".tab-title").animate({
+                top: "0px"
             });
         });        
 
