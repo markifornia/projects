@@ -44,6 +44,7 @@ a {
 
 .tab {
     display: block;
+    text-align: center;
 }
 
 .tab span {
