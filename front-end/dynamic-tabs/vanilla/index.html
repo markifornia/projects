@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Tabs</title>
+    <link href="css/style.css?ver=1.1.0" rel="stylesheet">
+</head>
+    <body>
+    <div class="tab-component">
+        <ul class="dynamic-tabs">
+            <li data-tab-target="#tab-1" class="tab active">Tab 1</li>
+            <li data-tab-target="#tab-2" class="tab">Tab 2</li>
+            <li data-tab-target="#tab-3" class="tab">Tab 3</li>
+            <li data-tab-target="#tab-4" class="tab">Tab 4</li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab-1" data-tab-content class="active">
+                <p>I am Tab 1</p>
+            </div>
+            <div id="tab-2" data-tab-content>
+                <p>I am Tab 2</p>
+            </div>
+            <div id="tab-3" data-tab-content>
+                <p>I am Tab 3</p>
+            </div>
+            <div id="tab-4" data-tab-content>
+                <p>I am Tab 4</p>
+            </div>                        
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+    </body>
+</html>
