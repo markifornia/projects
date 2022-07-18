@@ -68,6 +68,10 @@ a {
     color: #fff;    
 }
 
+.tab.active span.tab-title {
+    top: -10px !important;
+}
+
 .tab span.tab-arrow {
     padding: 7px 0;
 }

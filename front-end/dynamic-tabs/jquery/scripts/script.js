@@ -24,16 +24,22 @@
                 tab.classList.add('active');
                 target.classList.add('active');
             });
+            
         });
 
-        $(".tab").mouseenter(function() {
+    
+
+        $(".tab").on('mouseenter', function() {
+
             $(this).find(".tab-title").animate({
                 top: "-10px"
-            });
+            });          
+        
         }).mouseleave(function(){
             $(this).find(".tab-title").animate({
                 top: "0px"
             });
+
         });        
 
     });
