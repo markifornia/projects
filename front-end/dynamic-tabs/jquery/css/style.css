@@ -13,7 +13,6 @@ a {
 
 .tab-component {
     margin-top: 4em;
-    background-color: #33f;
     position: relative;
     max-width: 970px;
     margin-right: auto;
@@ -22,6 +21,8 @@ a {
 
 [data-tab-content] {
     display: none;
+    background-color: #33f; 
+    border: 3px solid #0f0f59;      
 }
 
 .active[data-tab-content] {
@@ -39,17 +40,29 @@ a {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    border-bottom: 3px solid #0f0f59;
+}
+
+.dynamic-tabs li {
+    flex: 1 1 auto;
+    border: 3px solid #0f0f59;
 }
 
 .tab {
     display: block;
     text-align: center;
+    background-color: #33f;    
+}
+
+.tab span.tab-title {
+    padding: 2em;
+    background-color: #33f;
+    color: #fff;    
 }
 
 .tab span {
     display: block;
     background: #2924BC;
+    color: #ffffff;
 }
 
 .tab.active {
