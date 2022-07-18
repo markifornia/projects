@@ -53,22 +53,40 @@ a {
     background-color: #33f;    
 }
 
-.tab span.tab-title {
-    padding: 2em;
-    background-color: #33f;
-    color: #fff;    
-}
-
 .tab span {
     display: block;
     background: #2924BC;
     color: #ffffff;
 }
 
-.tab.active {
-    background-color: #cccccc;
+.tab span.tab-title {
+    position: relative;
+    top: 0;
+    left: 0;    
+    padding: 2em;
+    background-color: #33f;
+    color: #fff;    
 }
 
-.tab:hover {
-    background-color: #aaaaaa;
+.tab span.tab-title:hover {
+    top: -10px;
 }
+
+.tab span.tab-arrow {
+    padding: 7px 0;
+}
+
+.tab i.arrow-down {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 0.2em solid #ffffff;
+    border-top: 0.2em solid #ffffff;
+    transform: rotate(135deg);
+    margin-right: 0.5em;
+    margin-left: 1.0em; 
+}
+
+
