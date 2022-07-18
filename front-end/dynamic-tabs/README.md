@@ -1,4 +1,4 @@
-### Dynamic Tabs
+# Dynamic Tabs
 
 A dynamic tab base component to extend from. 
 
