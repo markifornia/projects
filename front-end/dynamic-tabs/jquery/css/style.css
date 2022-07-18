@@ -1,6 +1,23 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: IBM Plex Sans,Helvetica,Arial,sans-serif;
+    background: #0f0f59;
+    color: #ffffff;
+}
+
+a {
+    color: #0f0f59;
+    cursor: pointer;
+}
+
+.tab-component {
+    margin-top: 4em;
+    background-color: #33f;
+    position: relative;
+    max-width: 970px;
+    margin-right: auto;
+    margin-left: auto;    
 }
 
 [data-tab-content] {
@@ -8,7 +25,12 @@ body {
 }
 
 .active[data-tab-content] {
-    display: block;
+    display: flex;
+}
+
+.active[data-tab-content] div {
+    flex-basis: 50%;
+    padding: 4em;
 }
 
 .dynamic-tabs {
@@ -17,12 +39,16 @@ body {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 3px solid #0f0f59;
 }
 
 .tab {
-    cursor: pointer;
-    padding: 10px;
+    display: block;
+}
+
+.tab span {
+    display: block;
+    background: #2924BC;
 }
 
 .tab.active {

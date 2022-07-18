@@ -5,27 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dynamic Tabs</title>
     <link href="css/style.css?ver=1.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans%3Awght%40300%3B400%3B500%3B700&#038;ver=5.8.4&#038;display=swap" media="print" onload="this.media='all'" />   
 </head>
     <body>
     <div class="tab-component">
         <ul class="dynamic-tabs">
-            <li data-tab-target="#tab-1" class="tab active">Tab 1</li>
-            <li data-tab-target="#tab-2" class="tab">Tab 2</li>
-            <li data-tab-target="#tab-3" class="tab">Tab 3</li>
-            <li data-tab-target="#tab-4" class="tab">Tab 4</li>
+            <li>
+                <a data-tab-target="#tab-1" class="tab active">
+                    Tab 1
+                    <span>Arrown Down</span>
+                </a>
+            </li>
+            <li>
+                <a data-tab-target="#tab-2" class="tab active">
+                    Tab 2
+                    <span>Arrown Down</span>
+                </a>
+            </li>
+            <li>
+                <a data-tab-target="#tab-3" class="tab active">
+                    Tab 3
+                    <span>Arrown Down</span>
+                </a>
+            </li>  
+            <li>
+                <a data-tab-target="#tab-4" class="tab active">
+                    Tab 4
+                    <span>Arrown Down</span>
+                </a>
+            </li>                        
         </ul>
         <div class="tab-content">
             <div id="tab-1" data-tab-content class="active">
-                <p>I am Tab 1</p>
+                <div>
+                    <h2>Heading 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisl quis eros commodo semper. Mauris cursus, augue sit amet laoreet laoreet, erat tortor tempus augue, eget eleifend erat urna ac odio. Quisque sed nibh mi. Etiam sed malesuada dui, ut condimentum augue. Praesent pretium neque justo, mattis finibus lorem viverra et. Mauris tempus enim ut volutpat rhoncus. Ut tortor est, varius quis diam feugiat, efficitur ultrices libero.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="" title="">Link 1</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="tab-2" data-tab-content>
-                <p>I am Tab 2</p>
+                <div>
+                    <h2>Heading 2</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="" title="">Link 1</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="tab-3" data-tab-content>
-                <p>I am Tab 3</p>
+                <div>
+                    <h2>Heading 3</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="" title="">Link 3</a></li>
+                    </ul>
+                </div>
             </div>
             <div id="tab-4" data-tab-content>
-                <p>I am Tab 4</p>
+                <div>
+                    <h2>Heading 4</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="" title="">Link 1</a></li>
+                    </ul>
+                </div>
             </div>                        
         </div>
     </div>

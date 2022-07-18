@@ -1,3 +1,7 @@
+/**
+ * Jquery version 3.6.0
+ */
+
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 
