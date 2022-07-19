@@ -9,16 +9,21 @@
         $(".tab").click(function() {
 
             const target = $(this).attr("data-tab-target").replace('#', '');
+            const tabContent = $(".tab-content").find('#' + target);
 
             $(".tab").find(".tab-title").animate({
                 top: "0px"
             });
 
-            $(".tab-content div").removeClass("active");
-            $(".tab").removeClass("active");
+            $(".tab-content > div").css("display", "none").removeClass("active");
 
+            $(".tab").removeClass("active");
             $(this).addClass("active");
-            $(".tab-content").find('#' + target).addClass("active");;
+
+            $(tabContent).fadeIn(1000, function() {
+                $(tabContent).addClass("active"); 
+            });
+
         });
 
         $(".tab").mouseenter(function() {
