@@ -103,3 +103,9 @@ a {
 }
 
 
+@media (max-width: 767px) {
+    [data-tab-content] div.tab-content-left, 
+    [data-tab-content] div.tab-content-right {
+        width: 100%;
+    }
+}
