@@ -109,7 +109,7 @@
                     <label>Quantity:</label>
                   </div>
                   <div class="cell">
-                    <input type="number" v-model="inventory.pineapples">
+                    <input type="number" v-model.number="inventory.pineapples">
                   </div>
                 </div>
               </form>
@@ -167,6 +167,28 @@
     </div>
       
     <script src="https://unpkg.com/vue@3"></script>
+
+    <script>
+      let app = Vue.createApp({
+        data() {
+          return {
+            inventory: {
+              carrots: 0,
+              pineapples: 0, 
+              cherries: 0
+            }
+          }
+        }, 
+        methods: {
+          addToCart(type) {
+            this.cart[type] += this.inventory[type];
+            console.log(this.cart);
+          }
+        }
+      });
+
+      app.mount('#app');
+    </script>
 
   </body>
 </html>
