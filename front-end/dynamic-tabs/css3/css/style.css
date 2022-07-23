@@ -57,7 +57,15 @@ a {
 }
 
 [data-tab-content] .inner-content {
+    -moz-transform: translateY(50px);
+    -webkit-transform: translateY(50px);  
+    -o-transform: translateY(50px);  
+    -ms-transform: translateY(50px);    
     transform: translateY(50px);
+    -webkit-transition: .25s ease-in;
+    -moz-transition: .25s ease-in;
+    -o-transition: .25s ease-in;
+    -ms-transition: .25s ease-in;
     transition: .25s ease-in;
     opacity: 0; 
     padding: 4em;       
@@ -70,6 +78,10 @@ a {
 }
 
 .active[data-tab-content] .inner-content {
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);  
+    -o-transform: translateY(0px);  
+    -ms-transform: translateY(0px);     
     transform: translateY(0px);
     opacity: 1
 }
@@ -115,7 +127,7 @@ a {
     font-size: 1.3em;
 }
 
-.tab:hover span.tab-title {
+.tab:hover span.tab-title, .tab.active span.tab-title {
     top: -10px !important;
 }
 
