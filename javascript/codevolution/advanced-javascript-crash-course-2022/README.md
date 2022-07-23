@@ -11,5 +11,7 @@ Credit to Codevolution - [Advanced JavaScript Crash Course 2022](https://www.you
 - Prototype
 - Prototypal Inheritance
 - Class
+
+## Super Advanced Topics, a bit verbose but still cool
 - Iterables and iterators
 - Generators
