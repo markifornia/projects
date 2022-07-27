@@ -24,7 +24,7 @@ a {
     margin-left: auto;    
 }
 
-.dynamic-tabs {
+.tab-head {
     margin: 0;
     padding: 0;
     display: flex;
@@ -32,7 +32,7 @@ a {
     list-style-type: none;
 }
 
-.dynamic-tabs li {
+.tab-head li {
     flex: 1 1 auto;
     border: 2px solid #0f0f59;
     max-width: 25%;
@@ -157,14 +157,14 @@ a {
 
 
 @media (max-width: 1084px) {
-    .dynamic-tabs {
+    .tab-head {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .dynamic-tabs li {
+    .tab-head li {
         display: flex; 
         flex-basis: calc(50% - 40px);  
         justify-content: center;
@@ -187,13 +187,11 @@ a {
         width: 100%;
     }
 
-    .dynamic-tabs li {
-
+    .tab-head li {
         flex-direction: row;
-
     }
 
-    .dynamic-tabs li a.tab:hover, .tab span.tab-title:hover {
+    .tab-head li a.tab:hover, .tab span.tab-title:hover {
         background-color: #2924BC;
     }
 
