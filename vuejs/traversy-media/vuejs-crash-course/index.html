@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS Crash Course</title>  
+  
+    <link href="style.css?ver=1.0" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <img :class="gender" v-bind:src="picture" :alt="`${firstName} ${lastName}`">
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>Email: {{email}}</h3>
+        <button v-on:click="getUser()" :class="gender">Get Random User</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
