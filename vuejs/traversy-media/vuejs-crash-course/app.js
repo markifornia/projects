@@ -16,7 +16,7 @@ const app  = Vue.createApp({
             console.log(results);
 
             this.firstName = results[0].name.first,
-            this.lastName = 'Doe',
+            this.lastName = results[0].name.last,
             this.email = 'john@gmail.com',
             this.gender = 'female',
             this.picture = 'https://randomuser.me/api/portraits/women/10.jpg'
