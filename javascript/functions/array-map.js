@@ -41,3 +41,21 @@ for (let i = 0; i < aSetOfNumbers.length; i++) {
 aSetOfNumbers.map(function(number) {
     console.log(number * number); // Same result, just lesser lines
 });
+
+/** Important to note though are some inherit behaviors of the map() function */
+
+// 1. map() creates a new array (assigned to a variable)
+// 2. map() calls the function for each element in the array
+// 3. map() empty elements won't work
+// 4. map() does not change the original array
+
+// So for the previous example, we can assign the entire thing an array, and return the result
+
+let squareRootOfEachNumber = aSetOfNumbers.map(function(number) {
+    return number * number; // Same result, just lesser lines
+});
+
+console.log(squareRootOfEachNumber);
+
+// [3, 4, 2, 6, 2, 7, 2] turns into [9, 16, 4, 36, 4, 49, 4]
+// Each number has been squared
